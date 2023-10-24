@@ -1,0 +1,266 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+
+}
+/* header dan navbar */
+.header{
+  width:100%;
+  height:100%;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../gmb/aa.jpeg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+nav{
+  width:100%;
+  height:;
+  display:flex;
+  justify-content:space-around;
+}
+.fa-bars{
+  display:none;
+  opacity:0;
+}
+nav ul{
+  width:40%;
+  display:flex;
+  justify-content:space-between; 
+}
+nav ul li{
+  list-style:none;
+}
+.hero{
+  width:100%;
+  height:90%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.hero h1{
+  color:white;
+}
+
+/* konten umum*/
+
+.konten{
+  width:100%;
+}
+.isi{
+background:url('../gmb/back.jpeg');
+background-size:cover;
+background-repeat:no-repeat; 
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:;
+  margin-top:10px;
+  opacity:0;
+  position:relative;
+  transform:translateY(100px);
+  transition:all 0.7s ease; 
+}
+.isiA{
+  height:50%;
+}
+.ulTampil{
+  position:relative;
+  transform:translateY(0);
+  opacity:1;
+}
+.isi .isiA1{
+  width:50%;
+  height:100%;
+  background:;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:10px;
+}
+.isi .isiA1 h3{
+  margin-bottom:20px;
+}
+.isi .isiA1 p{
+  font-size:5px;
+  background:royalblue;
+  color:white;
+  font-weight:bold;
+  padding:2px;
+}
+.isi .isiA2{
+  width:40%;
+  height:50%;
+  background:royalblue;
+  border-radius:50%;
+  overflow:hidden;
+} 
+.isi .isiA2 img{
+  width:100%;
+  height:110%;
+}
+.isiB{
+  display:flex;
+  justify-content:space-around;
+  height:50%;
+  align-items:center;
+  background:grey;
+  overflow-x:hidden;
+}
+.imga{
+  width:25%;
+  height:50%;
+  color:white;
+  font-size:5px;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  opacity:0;
+  transform:translateX(100px);
+  position:relative;
+  transition:all 0.7s ease; 
+}
+.imgabg1{
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../gmb/d.jpeg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.imgabg2{
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../gmb/e.jpeg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.imgabg3{
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../gmb/f.jpeg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.imgaScroll{
+  opacity:1;
+  transform:translateX(0);
+  position:relative;
+}
+.img img{
+  width:100%;
+  height:50%;
+}
+.img h4{
+  font-size:10px;
+}
+#tbl1B, #tbl2B, #tbl3B{
+  width:50%;
+  height:15%;
+  margin:10px auto; 
+}
+.kontenC{
+  width:100%;
+  height:100%;
+  background:white;
+  flex-direction:column;
+}
+.kontenC .isiC{
+  background:ghostwhite;
+  width:100%;
+  height:25%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:10px;
+}
+.isiC img{
+  width:40%;
+  height:100%;
+}
+.isiC h4{
+  width:80%;
+  height:100%;
+  display:flex;
+  padding:10px;
+}
+footer{
+  width:100%;
+  height:10%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:black;
+  color:white;
+  margin-top:20px;
+}
+button{
+  background:royalblue;
+  border-radius:10px;
+  color:white;
+  padding:3px;
+}
+#kontak{
+  width:100%;
+  height:50%;
+  background:url('gmb/back.jpg');
+  background-size:cover;
+  background-repeat:no-repeat; 
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+}
+#kontak li{
+  display:flex;
+  width:100%;
+  margin:10px auto; 
+}
+#kontak li #nama, #kota, #email{
+  width:20%;
+}
+#kontak li #fnama,#fkota, #femail{
+  width:60%;
+}
+
+
+/*responsif ukuran ponsel*/
+@media screen and (max-width:600px){
+  nav{
+    flex-direction:column;
+    height:;
+  }
+  .fa-bars{
+    display:block;
+    font-size:30px;
+    opacity:1;
+  }
+  nav ul{
+    background:lightgrey;
+    border-radius:30px;
+    width:100%;
+    flex-direction:column;
+    line-height:2;
+    text-align:center;
+    display:none;
+  }
+  .judul{
+    display:flex;
+    justify-content:space-between;
+  }
+  .navTampil{
+   display:block;
+  }
+  .hero{
+    word-break:break-word;
+  }
+}
